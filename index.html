@@ -8,7 +8,10 @@
 <body>
 </body>
 <script>
-console.log(`1-Comparaciones básicas
+console.log(`Luis Felipe Gómez Rodríguez`);
+
+console.log(`
+1-Comparaciones básicas 
 Evalúa y anota el resultado de cada expresión:`);
 
 console.log(`10 > 5: ${10 > 5}`);
@@ -28,24 +31,24 @@ console.log(`!(4 === "4"): ${!(4 === "4")}`);
 console.log(`(3 <= 3) || (7 > 10): ${(3 <= 3) || (7 > 10)}`);
 
 
-// console.log(`
-// 3. Condicional simple
-// Crea un programa que pregunte la temperatura de una ciudad y muestre:
-// • “Hace calor” si la temperatura es mayor o igual a 30.
-// • “Clima agradable” en caso contrario.`);
-// console.log(`
-// en su ciudad hace calor? averiguelo!!`);
+console.log(`
+3. Condicional simple
+Crea un programa que pregunte la temperatura de una ciudad y muestre:
+• “Hace calor” si la temperatura es mayor o igual a 30.
+• “Clima agradable” en caso contrario.`);
+console.log(`
+en su ciudad hace calor? averiguelo!!`);
 
-// let temperatura;
-// temperatura= parseInt(prompt("ingrese la temperatura de su ciudad"));
+let temperatura;
+temperatura= parseInt(prompt("ingrese la temperatura de su ciudad"));
 
-// if (temperatura >=30) {
-//     console.log(`hace calor`);
+if (temperatura >=30) {
+    console.log(`${temperatura} grados celcius: hace calor`);
     
-// } else{
-//     console.log(`clima agradable`);
+} else{
+    console.log(`${temperatura} grados celcius: clima agradable`);
     
-// }
+}
 
 console.log(`
 4. Condicional múltiple
@@ -59,17 +62,64 @@ Un programa debe clasificar la velocidad de un vehículo:
 let velocidad;
 velocidad= parseInt(prompt("velocidad:"));
 if (velocidad<30) {
-    console.log(`muy lento`);
+    console.log(`${velocidad}Kmh: muy lento`);
     
 } else if(velocidad>=30&& velocidad<=60){
-    console.log(`velocidad moderada`);
+    console.log(`${velocidad}Kmh: velocidad moderada`);
 }else if(velocidad>61 && velocidad<100){
-    console.log(`rapido`);
+    console.log(`${velocidad}Kmh: rapido`);
 }else if(velocidad>100){
-console.log(`muy rapido`);
+console.log(`${velocidad}Kmh: muy rapido`);
 }
 
+console.log(`5. Switch
+Un programa debe mostrar el mes del año según el número ingresado 
+(1 al 12). Ejemplo: 1 → Enero, 2 → Febrero, ..., 12 → Diciembre.`);
 
+let  numero_del_mes;
+numero_del_mes= parseInt(prompt("ingrese un numero y sepa que mes es"));
+
+switch (numero_del_mes) {
+    case 1:
+        console.log(`${numero_del_mes}: enero`);
+        break;
+     case 2:
+        console.log(`${numero_del_mes}: febrero`);
+        break;
+    case 3:
+        console.log(`${numero_del_mes}: marzo`);
+        break;
+    case 4:
+        console.log(`${numero_del_mes}: abril`);
+        break;
+    case 5:
+        console.log(`${numero_del_mes}: mayo`);
+        break;
+    case 6:
+        console.log(`${numero_del_mes}: junio`);
+        break;
+    case 7:
+        console.log(`${numero_del_mes}: julio`);
+        break;
+    case 8:
+        console.log(`${numero_del_mes}: agosto`);
+        break;
+    case 9:
+        console.log(`${numero_del_mes}: septiembre`);
+        break;
+    case 10:
+        console.log(`${numero_del_mes}: octubre`);
+        break;
+    case 11:
+        console.log(`${numero_del_mes}: noviembre`);
+        break;
+    case 12:
+        console.log(`${numero_del_mes}: diciembre`);
+        break;
+    console.log(`${numero_del_mes}: son solo 12 meses`);
+    default:
+        break;
+}
 
 </script>
 </html>
