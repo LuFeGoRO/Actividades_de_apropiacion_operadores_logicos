@@ -7,41 +7,53 @@
 </head>
 <body>
 </body>
-<script>
+<script>//muestro mi nombre en consola
 console.log(`Luis Felipe Gómez Rodríguez`);
-
+// muestro el problema a resolver en consola
 console.log(`
 1-Comparaciones básicas 
 Evalúa y anota el resultado de cada expresión:`);
-
+// muestro en consola el resultado
 console.log(`10 > 5: ${10 > 5}`);
+// muestro en consola el resultado
 console.log(`8 <= 8: ${8 <= 8}`);
+// muestro en consola el resultado
 console.log(`7 != "7": ${7 != "7"}`);
+// muestro en consola el resultado
 console.log(`4 === 4: ${4 === 4}`);
+// muestro en consola el resultado
 console.log(`6 == "6": ${6 == "6"}`);
 
+
+// muestro el problema a resolver en consola
 console.log(`
 
 2. Operadores lógicos
 Determina el resultado (true o false) de las siguientes expresiones:`);
-
+// muestro en consola el resultado
 console.log(`(true && true) || false: ${(true && true) || false}`);
+// muestro en consola el resultado
 console.log(`(5 > 2) && (10 < 8): ${(5 > 2) && (10 < 8)}`);
+// muestro en consola el resultado
 console.log(`!(4 === "4"): ${!(4 === "4")}`);
+// muestro en consola el resultado
 console.log(`(3 <= 3) || (7 > 10): ${(3 <= 3) || (7 > 10)}`);
 
-
+// muestro el problema a resolver en consola
 console.log(`
 3. Condicional simple
 Crea un programa que pregunte la temperatura de una ciudad y muestre:
 • “Hace calor” si la temperatura es mayor o igual a 30.
 • “Clima agradable” en caso contrario.`);
+// declaro para que es el programa en consola
 console.log(`
 en su ciudad hace calor? averiguelo!!`);
-
+// declaro la variable 
 let temperatura;
+// pido una entrada para asignarla a la variable temperarura
 temperatura= parseInt(prompt("ingrese la temperatura de su ciudad"));
-
+/*genro una condicional que indique segun la entrada del alert
+si el clima es caliente o es agradable*/  
 if (temperatura >=30) {
     console.log(`${temperatura} grados celcius: hace calor`);
     
@@ -49,7 +61,7 @@ if (temperatura >=30) {
     console.log(`${temperatura} grados celcius: clima agradable`);
     
 }
-
+// muestro el problema a resolver en consola
 console.log(`
 4. Condicional múltiple
 Un programa debe clasificar la velocidad de un vehículo:
@@ -58,12 +70,14 @@ Un programa debe clasificar la velocidad de un vehículo:
 • Entre 61 y 100 → “Rápido”
 • Mayor a 100 → “Muy rápido”
 .`);
-
+// declaro la variable 
 let velocidad;
+// pido una entrada para asignarla a la variable velocidad
 velocidad= parseInt(prompt("velocidad:"));
+/*genro una condicional que indique segun la entrada del alert si va
+a alta velocidad y no*/ 
 if (velocidad<30) {
     console.log(`${velocidad}Kmh: muy lento`);
-    
 } else if(velocidad>=30&& velocidad<=60){
     console.log(`${velocidad}Kmh: velocidad moderada`);
 }else if(velocidad>61 && velocidad<100){
@@ -72,13 +86,16 @@ if (velocidad<30) {
 console.log(`${velocidad}Kmh: muy rapido`);
 }
 
+// muestro el problema a resolver en consola
 console.log(`5. Switch
 Un programa debe mostrar el mes del año según el número ingresado 
 (1 al 12). Ejemplo: 1 → Enero, 2 → Febrero, ..., 12 → Diciembre.`);
-
+// declaro la variable 
 let  numero_del_mes;
+// pido una entrada para asignarla a la variable numero_de_mes
 numero_del_mes= parseInt(prompt("ingrese un numero y sepa que mes es"));
-
+/*establesco un interruptor que se activa segun la entrada del alert
+e indica que mes es si cumple con los casos del interruptorom*/
 switch (numero_del_mes) {
     case 1:
         console.log(`${numero_del_mes}: enero`);
