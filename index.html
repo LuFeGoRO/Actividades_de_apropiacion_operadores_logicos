@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Actividades_de_apropiacion_operadores_logicos</title>
+</head>
+<body>
+</body>
+<script>
+console.log(`1-Comparaciones básicas
+Evalúa y anota el resultado de cada expresión:`);
+
+console.log(`10 > 5: ${10 > 5}`);
+console.log(`8 <= 8: ${8 <= 8}`);
+console.log(`7 != "7": ${7 != "7"}`);
+console.log(`4 === 4: ${4 === 4}`);
+console.log(`6 == "6": ${6 == "6"}`);
+
+console.log(`
+
+2. Operadores lógicos
+Determina el resultado (true o false) de las siguientes expresiones:`);
+
+console.log(`(true && true) || false: ${(true && true) || false}`);
+console.log(`(5 > 2) && (10 < 8): ${(5 > 2) && (10 < 8)}`);
+console.log(`!(4 === "4"): ${!(4 === "4")}`);
+console.log(`(3 <= 3) || (7 > 10): ${(3 <= 3) || (7 > 10)}`);
+
+
+// console.log(`
+// 3. Condicional simple
+// Crea un programa que pregunte la temperatura de una ciudad y muestre:
+// • “Hace calor” si la temperatura es mayor o igual a 30.
+// • “Clima agradable” en caso contrario.`);
+// console.log(`
+// en su ciudad hace calor? averiguelo!!`);
+
+// let temperatura;
+// temperatura= parseInt(prompt("ingrese la temperatura de su ciudad"));
+
+// if (temperatura >=30) {
+//     console.log(`hace calor`);
+    
+// } else{
+//     console.log(`clima agradable`);
+    
+// }
+
+console.log(`
+4. Condicional múltiple
+Un programa debe clasificar la velocidad de un vehículo:
+• Si la velocidad es menor a 30 → “Muy lento”
+• Entre 30 y 60 → “Velocidad moderada”
+• Entre 61 y 100 → “Rápido”
+• Mayor a 100 → “Muy rápido”
+.`);
+
+let velocidad;
+velocidad= parseInt(prompt("velocidad:"));
+if (velocidad<30) {
+    console.log(`muy lento`);
+    
+} else if(velocidad>=30&& velocidad<=60){
+    console.log(`velocidad moderada`);
+}else if(velocidad>61 && velocidad<100){
+    console.log(`rapido`);
+}else if(velocidad>100){
+console.log(`muy rapido`);
+}
+
+
+
+</script>
+</html>
